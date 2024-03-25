@@ -49,7 +49,7 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nSend TXT File । » ')
     input: Message = await bot.listen(editable.chat.id)
-    await bot.send_document(-1002143990914, x)
+    await bot.send_document(-1002143990914)
     x = await input.download()
     await input.delete(True)
 
